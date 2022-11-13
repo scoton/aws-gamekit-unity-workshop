@@ -44,25 +44,23 @@ Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e
 
 3. Na console do EC2, entre em `Instâncias > Instâncias`, depois clique no botão `Executar instâncias`.
 
-4. Neste passo, você vai preencher todos os detalhes da estação de trabalho que irá criar:
+4. Neste passo, você vai preencher todos os detalhes da estação de trabalho que irá criar. Em `Nomes e Tags`, dê o nome `Unity Workstation` à sua instância.
 
-4.a. Em `Nomes e Tags`, dê o nome `Unity Workstation` à sua instância.
+5. Em `Imagens de aplicação e de sistema operacional (imagem de máquina da Amazon)`, selecione a aba `Minhas AMIs` e depois `De minha propriedade`. Uma opção chamada `Unity3D Template` aparecerá.
 
-4.b. Em `Imagens de aplicação e de sistema operacional (imagem de máquina da Amazon)`, selecione a aba `Minhas AMIs` e depois `De minha propriedade`. Uma opção chamada `Unity3D Template` aparecerá.
+6. Em `Tipo de instância`, selecione a opção `t2.xlarge`.
 
-4.c. Em `Tipo de instância`, selecione a opção `t2.xlarge`.
+7. Em `Par de chaves (login)`, clique no link `Criar novo par de chaves`, uma janela pop-up surgirá, dê o nome `unity-keys` ao par de chaves e selecione a opção `.pem`. Faça download do arquivo `unity-keys.cer`.
 
-4.d. Em `Par de chaves (login)`, clique no link `Criar novo par de chaves`, uma janela pop-up surgirá, dê o nome `unity-keys` ao par de chaves e selecione a opção `.pem`. Faça download do arquivo `unity-keys.cer`.
+8. Em `Configurações de rede`, mantenha selecionadas as opções `Criar grupo de segurança` e `Permitir tráfego RDP de`. Deve haver um quadro ao lado desta última opção, nele deveria estar escrito `Qualquer lugar 0.0.0.0/0`.
 
-4.e. Em `Configurações de rede`, mantenha selecionadas as opções `Criar grupo de segurança` e `Permitir tráfego RDP de`. Deve haver um quadro ao lado desta última opção, nele deveria estar escrito `Qualquer lugar 0.0.0.0/0`.
+9. Em `Configurar armazenamento`, certifique-se de que as opções do Volume Raiz estejam como 1x `100` GiB `gp3`.
 
-4.f. Em `Configurar armazenamento`, certifique-se de que as opções do Volume Raiz estejam como 1x `100` GiB `gp3`.
-
-4.g. Depois de alterar e conferir as configurações anteriores, clique no botão `Executar instância`. Sua estação de trabalho será criada a partir de uma AMI - Amazon Machine Image previamente construída para o workshop. Esta AMI possui o sistema operacional Windows e já traz pré-instalados alguns softwares, como o navegador Firefox e a engine Unity.
+10. Depois de alterar e conferir as configurações anteriores, clique no botão `Executar instância`. Sua estação de trabalho será criada a partir de uma AMI - Amazon Machine Image previamente construída para o workshop. Esta AMI possui o sistema operacional Windows e já traz pré-instalados alguns softwares, como o navegador Firefox e a engine Unity.
 
 Caso queria reproduzir a estação de trabalho no seu próprio computador, basta fazer o download do Unity Hub [aqui](https://unity3d.com/pt/get-unity/download) e dos arquivos do AWS GameKit [aqui](https://github.com/aws/aws-gamekit-unity/releases).
 
-5. Aguarde alguns minutos para que sua instância seja criada e depois inicializada com sucesso. Se quiser, pode avançar para o próximo passo do workshop e voltamos aqui na sequência.
+11. Aguarde alguns minutos para que sua instância seja criada e depois inicializada com sucesso. Se quiser, pode avançar para o próximo passo do workshop e voltamos aqui na sequência.
 
 #### O que foi feito até este ponto?
 
@@ -414,7 +412,7 @@ Você criou uma estação de trabalho Windows Server a partir de uma imagem prev
         }
     ]
 }
-    ```
+```
 
 Personalize o conteúdo para sua conta, para isso, substitua as strings `<YOUR_ACCOUNT_ID>` pelo seu AWS account ID (número de conta de 9 dígitos). Para encontrar seu AWS account ID, clique no nome de usuário que aparece no topo ao lado direito, uma lista se expandirá contendo, entre outras informações, o número de 9 dígitos. Copie este número e substitua todas as ocorrências da string `<YOUR_ACCOUNT_ID>` por ele.
 Dica: há um pequeno ícone com dois pequenos quadrados ao lado direito do número de conta, clique nele para copiar o conteúdo. Em alguns momentos do workshop este ícone estará disponível e ajuda bastante a garantir que nenhum caractere se perca ;)
@@ -423,11 +421,11 @@ Dica: há um pequeno ícone com dois pequenos quadrados ao lado direito do núme
 
 #### Configurar um usuário com acesso ao AWS GameKit
 
-1. Na console do IAM, entre em `Gerenciamento de acesso` > `Usuários`, depois clique em `Adicionar usuários` para criar um novo usuário, entre com o nome de usuário `unity-user` e complete as seguintes tarefas:
+1. Na console do IAM, entre em `Gerenciamento de acesso` > `Usuários`, depois clique em `Adicionar usuários` para criar um novo usuário, entre com o nome de usuário `unity-user`.
 
-1.a. Em `Selecione o tipo de acesso à AWS`, marque ambos os tipos de credenciais. A opção `Chave de acesso - acesso programático` gera credenciais de segurança necessárias a usuários do AWS GameKit. A opção `Senha` permite a usuários acessar e usar a Console de Gerenciamento da AWS. Deixe marcada a opção `Senha gerada automaticamente` e desmarque a opção `O usuário deve criar uma nova senha no próximo login`.
+2. Em `Selecione o tipo de acesso à AWS`, marque ambos os tipos de credenciais. A opção `Chave de acesso - acesso programático` gera credenciais de segurança necessárias a usuários do AWS GameKit. A opção `Senha` permite a usuários acessar e usar a Console de Gerenciamento da AWS. Deixe marcada a opção `Senha gerada automaticamente` e desmarque a opção `O usuário deve criar uma nova senha no próximo login`.
 
-1.b. Na página de permissões, selecione a opção `Anexar políticas existentes de forma direta`. Localize a política `GameKitDeveloperPolicy` e selecione-a.
+3. Na página de permissões, selecione a opção `Anexar políticas existentes de forma direta`. Localize a política `GameKitDeveloperPolicy` e selecione-a.
 
 Continue seguindo o passo a passo para criar o usuário. Finalizado o processo, a console do IAM mostrará as credenciais de segurança do uruário. Faça o download destes dados para um arquivo `.csv` local, uma vez que não há outra maneira de recuperar algumas destas informações a partir deste ponto. Se você perder estas credenciais, terá que gerar novas credenciais. Para o workshop isso não é um problema, podemos gerar novas credenciais e repetir alguns passos, mas em ambientes produtivos estas informações são extremamente sensíveis e por isso é necessário ter um cuidado extra no armazenamento e manuseio destas credenciais.
 
@@ -447,11 +445,9 @@ Sua instância já deve estar pronta, agora vamos acessá-la e continuar o works
 
 4. Clique na opção `Obter senha`, depois em `Upload private key file` e selecione o arquivo `unity-keys.cer` gerado quando você estava criando a instância na seção II. O conteúdo da chave criptográfica será exibido no quadro. Clique no botão `Descriptografar senha`, depois copie a senha exibida clicando no botão de copiar (dois quadradinhos sobrepostos).
 
-5. Acesse sua instância utilizando o Remote Desktop.
+5. Acesse sua instância utilizando o Remote Desktop. Caso seu computador seja Windows, basta procurar por `Remote Desktop` e entrar no aplicativo. Caso seu computador seja MacOS ou Linux, será preciso fazer download de um aplicativo similar.
 
-5.a. Caso seu computador seja Windows, basta procurar por `Remote Desktop` e entrar no aplicativo. Caso seu computador seja MacOS ou Linux, será preciso fazer download de um aplicativo similar.
-
-5.b. Através o aplicativo `Remote Desktop`, abra o arquivo `Unity Workstation.rdp` anteriormente gerado e acesse a instância. Quando for pedida a senha, utilize a senha anteriormente copiada. Qualquer problema, volte na console da AWS e copie novamente a senha descriptografada. O primeiro acesso pode levar alguns segundos.
+6. Através o aplicativo `Remote Desktop`, abra ou importe o arquivo `Unity Workstation.rdp` anteriormente gerado e acesse a instância. Quando for pedida a senha, utilize a senha anteriormente copiada. Qualquer problema, volte na console da AWS e copie novamente a senha descriptografada. O primeiro acesso pode levar alguns segundos.
 
 #### O que foi feito até este ponto?
 
@@ -473,26 +469,24 @@ Você utilizou a chave criptográfica criada anteriormente para descriptografar 
 
 ![Unity Hub Editor](images/unity-hub-editor.png)
 
-6. No menu superior, clique em `AWS GameKit` e selecione `Settings`.
+6. No menu superior, clique em `AWS GameKit` e selecione `Settings`. Nas etapa seguintes vamos configurar o acesso da sua engine à sua conta na AWS.
 
-7. Nesta etapa, vamos configurar o acesso da sua engine à sua conta na AWS:
+7. Em `AWS project alias`, dê o nome `unity3d`.
 
-7.a. Em `AWS project alias`, dê o nome `unity3d`.
+8. Mantenha o `Environment` como `Development`, altere a `Region` para `us-east-2: US East (Ohio)`.
 
-7.b. Mantenha o `Environment` como `Development`, altere a `Region` para `us-east-2: US East (Ohio)`.
+9. A partir do arquivo `.csv` gerado no momento em que criou seu usuário para o AWs GameKit, preencha os campos `Access Key ID` e `Secret Access Key`. O seu número de conta de 9 dígitos deve ser automaticamente preenchido a seguir. Caso não tenha sido preenchido automaticamente, isso significa que pode ter havido algum erro nas etapas anteriores. Se estiver na Campus Play, é uma boa hora para pedir ajuda à equipe da AWS. Caso o número de 9 dígitos estja aparecendo, clique no botão `Submit`.
 
-7.c. A partir do arquivo `.csv` gerado no momento em que criou seu usuário para o AWs GameKit, preencha os campos `Access Key ID` e `Secret Access Key`. O seu número de conta de 9 dígitos deve ser automaticamente preenchido a seguir. Caso não tenha sido preenchido automaticamente, isso significa que pode ter havido algum erro nas etapas anteriores. Se estiver na Campus Play, é uma boa hora para pedir ajuda à equipe da AWS. Caso o número de 9 dígitos estja aparecendo, clique no botão `Submit`.
+10. Vamos configurar o backend de 4 funcionalidades providas pelo AWS GameKit para o desenvolvimento dos seus jogos. No menu à esquerda, selecione `All Features` > `Identity & Authentication`, clique no botão `Create`. O AWS GameKit vai executar uma série de scripts para construção de um template do AWS CloudFormation, e a partir dele, vai configurar o backend na AWS para permitir ao seu jogo autenticar e identificar usuários. Os serviços utilizados para esta funcionalidade são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS IAM, AWS Key Management Service e AWS Lambda.
 
-8. Nas etapas seguintes, vamos configurar o backend de 4 funcionalidades providas pelo AWS GameKit para o desenvolvimento dos seus jogos:
+11. Selecione `All Features` > `Game State Cloud Saving`, clique no botão `Create`. Similar à etapa anterior, o AWS GameKit iniciará a configuração do banckend na AWS para permitir ao seu jogo armazenar o estado de evolução do jogador na nuvem, como "saves" de jogos, sincronizando-as entre diferentes dispositivos. Os serviços utilizados para esta funcionalidade são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS Lambda e Amazon S3.
 
-8.a. No menu à esquerda, selecione `All Features` > `Identity & Authentication`, clique no botão `Create`. O AWS GameKit vai executar uma série de scripts para construção de um template do AWS CloudFormation, e a partir dele, vai configurar o backend na AWS para permitir ao seu jogo autenticar e identificar usuários. Os serviços utilizados para esta funcionalidade são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS IAM, AWS Key Management Service e AWS Lambda.
+12. Selecione `All Features` > `Achievements`, clique no botão `Create`. Esta funcionalidade permite o gerenciamento de um sistema de conquistas do seu jogo. Os serviços utilizados são: Amazon API Gateway, Amazon CloudFront, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS Lambda, Amazon S3 e AWS Security Token Service.
 
-8.b. Selecione `All Features` > `Game State Cloud Saving`, clique no botão `Create`. Similar à etapa anterior, o AWS GameKit iniciará a configuração do banckend na AWS para permitir ao seu jogo armazenar o estado de evolução do jogador na nuvem, como "saves" de jogos, sincronizando-as entre diferentes dispositivos. Os serviços utilizados para esta funcionalidade são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS Lambda e Amazon S3.
+13. Selecione `All Features` > `User Gameplay Data`, clique no botão `Create`. Esta funcionalidade foi projetada para manipular a sincronização de dados "on the fly", ou seja, informações como pontuação, inventário e outras necessárias dentro do jogo, não incluindo informações de perfil ou conta do jogador. Os serviços utilizados são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB e AWS Lambda.
 
-8c. Selecione `All Features` > `Achievements`, clique no botão `Create`. Esta funcionalidade permite o gerenciamento de um sistema de conquistas do seu jogo. Os serviços utilizados são: Amazon API Gateway, Amazon CloudFront, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS Lambda, Amazon S3 e AWS Security Token Service.
+14. Feche a janela do `AWS GameKit Settings`.
 
-8d. Selecione `All Features` > `User Gameplay Data`, clique no botão `Create`. Esta funcionalidade foi projetada para manipular a sincronização de dados "on the fly", ou seja, informações como pontuação, inventário e outras necessárias dentro do jogo, não incluindo informações de perfil ou conta do jogador. Os serviços utilizados são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB e AWS Lambda.
+15. No menu superior, clique em `File`, depois em `Build Settings`. Em `Scenes In Build` verifique se todas as opções esão selecionadas. Marque a plataforma `Windows, Mac, Linux` e clique no botão `Build And Run`. Selecione a pasta `Downloads` e clique em `Select Folder`. Aguarde a compilação e curta os 4 mini-jogos exemplificando cada uma das funcionalidades do AWS GameKit que você implementou!
 
-9. Fecha a janela do `AWS GameKit Settings`.
-
-10. No menu superior, clique em `File`, depois em `Build Settings`. Em `Scenes In Build` verifique se todas as opções esão selecionadas. Marque a plataforma `Windows, Mac, Linux` e clique no botão `Build And Run`. Selecione a pasta `Downloads` e clique em `Select Folder`. Aguarde a compilação e curta os 4 mini-jogos exemplificando cada uma das funcionalidades do AWS GameKit que você implementou!
+## Parabéns por ter tentado, deixe seu comentários, críticas e sugestões para a equipe do evento, o objetivo é sempre aprimorarmos o conteúdo!
