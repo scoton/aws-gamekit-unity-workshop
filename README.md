@@ -49,6 +49,14 @@ Preencha o campo com o event hash fornecido pela equipe da AWS e clique no botã
 
 Selecione a opção `Email One-Time Password (OTP)`, preencha com seu email e clique em `Enviar código de acesso`.
 
+Você receberá um código de acesso de 9 dígitos no email cadastrado, copie o código e preencha o campo, clique em `Fazer login`.
+
+Neste momento você deverá ver esta tela:
+
+![Team Dashboard](images/team-dashboard.png)
+
+No Dashboard do evento, clique no botão `AWS Console` e depois em `Open Console`. Pronto, você agora está conectado na Console de Gerenciamento da AWS!
+
 ## II. Criando uma estação de trabalho na nuvem
 
 Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e fazer todo o desenvolvimento lá. Esta é uma boa maneira de garantir que você sempre tenha acesso à sua máquina de desenvolvimento, não importa onde estiver. Caso esteja fazendo este workshop fora da Campus Play e queira reproduzir este trecho no seu próprio computador, sem a necessidade de criar a estação de trabalho na AWS, basta fazer o download e instalar o Unity, você pode encontrar os links mais importantes no final desta seção.
