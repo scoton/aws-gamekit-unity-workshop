@@ -72,7 +72,7 @@ Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e
 
 4. Neste passo, você vai preencher todos os detalhes da estação de trabalho que irá criar. Em `Nomes e Tags`, dê o nome `Unity Workstation` à sua instância.
 
-5. Em `Imagens de aplicação e de sistema operacional (imagem de máquina da Amazon)`, selecione a aba `Minhas AMIs` e depois `De minha propriedade`. Uma opção chamada `Unity3D Template` aparecerá.
+5. Em `Imagens de aplicação e de sistema operacional (imagem de máquina da Amazon)`, clique no link `Procurar mais AMIs` e depois selecione a aba `Minhas AMIs (1)`. Nos filtros, à esquerda, desmarque a opção `De minha propriedade` e marque a opção `Compartilhado comigo`. Uma opção de AMI chamada `Unity3D Template` aparecerá, clique no botão `Selecionar`.
 
 6. Em `Tipo de instância`, selecione a opção `t2.xlarge`.
 
