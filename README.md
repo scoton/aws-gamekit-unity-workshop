@@ -66,7 +66,7 @@ Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e
 
 1. Na Console de Gerenciamento da AWS, acesse o serviço EC2, você pode buscá-lo na barra de buscas ou acessar diretamente por este [link](https://console.aws.amazon.com/ec2/).
 
-2. Assegure-se de que você esteja utilizando a Região Ohio (us-east-2), para isso, observe no canto superior direito da tela com um nome de cidade e uma seta apontando para baixo. Se estiver Ohio, tudo certo, mas se estiver Oregon, N. Virginia, São Paulo, ou qualquer outro nome, clique na seta e selecione `Leste dos EUA (Ohio) us-east-2`. A AWS possui seus serviços distribuídos ao redor do mundo em Regiões. Este workshop foi construído para usar a Região de Ohio como exemplo, mas se você estiver repetindo ou se aprofundando com sua própia conta da AWS, saiba que você poderia usar outras Regiões, desde que suportadas pelo AWS GameKit.
+2. Assegure-se de que você esteja utilizando a Região Ohio (us-east-2), para isso, observe no canto superior direito da tela com um nome de cidade e uma seta apontando para baixo. Se estiver Ohio, tudo certo, mas se estiver Oregon, N. Virginia, São Paulo, ou qualquer outro nome, clique na seta e selecione `Leste dos EUA (Ohio) us-east-2`. A AWS possui seus serviços distribuídos ao redor do mundo em Regiões. Este workshop foi construído para usar a Região de Ohio como exemplo, mas se você estiver repetindo ou se aprofundando usando sua própria conta da AWS, saiba que você poderia usar outras Regiões, desde que suportadas pelo AWS GameKit.
 
 3. Na console do EC2, entre em `Instâncias > Instâncias`, depois clique no botão `Executar instâncias`.
 
