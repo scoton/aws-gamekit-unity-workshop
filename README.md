@@ -4,8 +4,6 @@ Bem-vindo à Campus Party Brasil 2022!
 
 Ficamos felizes que você tenha dedicado parte do seu dia para exercitar alguns conceitos e experimentar, na prática, um pouco da experiência de um desenvolvedor de jogos eletrônicos.
 
-Qual o desafio?
-
 Neste workshop cada participante (com qualquer nível de conhecimento) terá a oportunidade de criar um mini-jogo. Os participantes conhecerão o AWS GameKit, solução que permite a desenvolvedores implantar e personalizar recursos de backend de jogos diretamente a partir dos engines Unity e Unreal, e experimentarão na prática com projetos-exemplo.
 
 Onde consigo materiais adicionais para me ajudar?
@@ -13,11 +11,13 @@ Onde consigo materiais adicionais para me ajudar?
 Você pode encontrar o descritivo e a documentação do serviço AWS GameKit nestes dois links:
 
 [Descritivo do serviço](https://aws.amazon.com/pt/gamekit/)
+
 [Documentação do serviço](https://docs.aws.amazon.com/gamekit/index.html)
 
 Além disso, recomendamos que siga este guia inicial em caso de dúvidas, pois passa por cada um dos primeiros passos para se usar o GameKit através da console: 
 
 [Getting started - Unity](https://docs.aws.amazon.com/gamekit/latest/UnityDevGuide/getting-started.html)
+
 [Getting started - Unreal](https://docs.aws.amazon.com/gamekit/latest/UnrealDevGuide/getting-started.html)
 
 Este workshop foi construído para que você não precise da documentação extra, mas é sempre bom saber onde encontrar ajuda se quiser se aprofundar! Seguindo o passo a passo, você vai poder entender um pouco melhor qual o papel de um game engine, Unity no neste caso, navegar um pouco na console de serviços da AWS, e como o AWS GameKit automatiza tarefas de construção da infraestrutura de backend para suportar seu jogo online.
