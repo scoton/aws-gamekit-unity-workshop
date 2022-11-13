@@ -14,7 +14,7 @@ Você pode encontrar o descritivo e a documentação do serviço AWS GameKit nes
 
 [Documentação do serviço](https://docs.aws.amazon.com/gamekit/index.html)
 
-Além disso, recomendamos que siga este guia inicial em caso de dúvidas, pois passa por cada um dos primeiros passos para se usar o GameKit através da console: 
+Além disso, recomendamos que siga este guia inicial em caso de dúvidas, pois passa por cada um dos primeiros passos para se usar o AWS GameKit através da console: 
 
 [Getting started - Unity](https://docs.aws.amazon.com/gamekit/latest/UnityDevGuide/getting-started.html)
 
@@ -22,13 +22,14 @@ Além disso, recomendamos que siga este guia inicial em caso de dúvidas, pois p
 
 O guia também contém detalhes de cada uma das funcionalidades implementadas, bem como pontos de atenção para quem desejar mover seu projeto para uma versão de produção.
 
-Este workshop foi construído para que você não precise da documentação extra, mas é sempre bom saber onde encontrar ajuda se quiser se aprofundar! Seguindo o passo a passo, você vai poder entender um pouco melhor qual o papel de um game engine, Unity neste caso, navegar um pouco na console de serviços da AWS, além de como o AWS GameKit automatiza tarefas de construção da infraestrutura de backend para suportar seu jogo online.
+Este workshop foi construído para que você não precise da documentação extra, mas é sempre bom saber onde encontrar ajuda se quiser se aprofundar! Seguindo o passo a passo, você poderá entender um pouco melhor qual o papel de um game engine, navegar um pouco na console de serviços da AWS, além de como o AWS GameKit automatiza tarefas de construção da infraestrutura de backend para suportar seu jogo online.
 
 ## Pré-requisitos
 
 ### Usuário e conta da AWS
 
-Para execução deste workshop você precisará de um usuário da AWS com acesso a diferentes serviços, entre eles AWS IAM, Amazon S3, Amazon DynamoDB, AWS Lambda, Amazon API Gateway, AWS Systems Manager Parameter Store, Amazon EC2, Amazon Cognito, Amazon CloudWatch e AWS CloudFormation. Muita coisa? Não se preocupe, você perceberá que muita está automatizado, mas é legal entender o que está por trás. 
+Para execução deste workshop você precisará de um usuário da AWS com acesso a diferentes serviços, entre eles AWS IAM, Amazon S3, Amazon DynamoDB, AWS Lambda, Amazon API Gateway, AWS Systems Manager Parameter Store, Amazon EC2, Amazon Cognito, Amazon CloudWatch e AWS CloudFormation. Muita coisa? Não se preocupe, você perceberá que muito está automatizado, mas é legal entender o que está por trás. 
+
 Se você estiver realizando este workshop dentro da sessão da Campus Play, a equipe vai fornecer uma conta e usuário temporários da AWS, mas se você não conseguiu participar e está tentando os passos em outro momento, sem problemas, basta acessar o site da AWS e criar sua conta. Não há custos para a criação de uma conta na AWS, você pagará apenas pelos recursos que utilizar e apenas pelo tempo em que estiverem ativos. Com exceção da estação de trabalho na nuvem, os demais serviços utilizados no workshop possuem um free tier, ou seja, um limite até o qual podem ser utilizados sem custo.
 
 ### Usuário e conta no Unity
