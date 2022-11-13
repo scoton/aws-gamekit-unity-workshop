@@ -60,7 +60,7 @@ No Dashboard do evento, clique no botão `AWS Console` e depois em `Open Console
 
 ## II. Criando uma estação de trabalho na nuvem
 
-Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e fazer todo o desenvolvimento lá. Esta é uma boa maneira de garantir que você sempre tenha acesso à sua máquina de desenvolvimento, não importa onde estiver. Caso esteja fazendo este workshop fora da Campus Play e queira reproduzir este trecho no seu próprio computador, sem a necessidade de criar a estação de trabalho na AWS, basta fazer o download e instalar o Unity, você pode encontrar os links mais importantes no final desta seção.
+Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e fazer todo o desenvolvimento nela. Esta é uma boa maneira de garantir que você sempre tenha acesso à sua máquina de desenvolvimento, não importa onde estiver. Caso esteja fazendo este workshop fora da Campus Play e queira reproduzir este trecho no seu próprio computador, sem a necessidade de criar a estação de trabalho na AWS, basta fazer o download e instalar o Unity, você pode encontrar os links mais importantes no final desta seção.
 
 ### Executando uma instância no Amazon EC2
 
