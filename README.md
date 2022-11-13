@@ -94,7 +94,7 @@ Você criou uma estação de trabalho Windows Server a partir de uma imagem prev
 
 ## III. Criando um usuário com acesso ao AWS GameKit
 
-É uma boa prática ter diferentes usuários e perfis com acesso restrito aos recursos da sua conta na AWS. Desta maneira, aumenta-se o nível de segurança, estabelecendo um controle mais granular de "quem pode fazer o que". O AWS GameKit provê um script automarizado para criação de usuários, mas para exercitarmos um pouco deste processo, vamos executar o passo a passo manualmente.
+É uma boa prática ter diferentes usuários e perfis com acesso restrito aos recursos da sua conta na AWS. Desta maneira, aumenta-se o nível de segurança, estabelecendo um controle mais granular de "quem pode fazer o que". O AWS GameKit provê um script automarizado para criação de usuários, mas para exercitarmos um pouco este processo, vamos executar o passo a passo manualmente.
 
 ### Usando o IAM para configuração do usuário de acesso
 
