@@ -26,7 +26,7 @@ Este workshop foi construído para que você não precise da documentação extr
 
 ### Usuário e conta da AWS
 
-Para execução deste workshop você precisará de um usuário aa AWS com acesso aos serviços IAM, S3, DynamoDB, Lambda, API Gateway, Parameter Store, EC2, Cognito e CloudFormation. Se você estiver realizando este workshop dentro da sessão da Campus Play, a equipe vai fornecer uma conta e usuário temporários da AWS, mas se você não conseguiu participar e está tentando os passos em outro momento, sem problemas, basta acessar o site da AWS, criar sua conta, depois você pode voltar aqui e continuar a partir do passo de criação de um usuário ("II. Criando um usuário com acesso ao AWS GameKit").
+Para execução deste workshop você precisará de um usuário aa AWS com acesso aos serviços IAM, S3, DynamoDB, Lambda, API Gateway, Parameter Store, EC2, Cognito e CloudFormation. Se você estiver realizando este workshop dentro da sessão da Campus Play, a equipe vai fornecer uma conta e usuário temporários da AWS, mas se você não conseguiu participar e está tentando os passos em outro momento, sem problemas, basta acessar o site da AWS, criar sua conta, depois você pode voltar aqui e continuar a partir do passo de criação de um usuário ("III. Criando um usuário com acesso ao AWS GameKit").
 
 ## I. Acessando a console da AWS pela primeira vez
 
