@@ -452,15 +452,15 @@ Vale dedicar um tempo para revisar o conteúdo deste JSON. Mesmo que você não 
 
 1. Na console do IAM, entre em `Gerenciamento de acesso` > `Usuários`, depois clique em `Adicionar usuários` para criar um novo usuário, entre com o nome de usuário `unity-user`.
 
-2. Em `Selecione o tipo de acesso à AWS`, marque ambos os tipos de credenciais. A opção `Chave de acesso - acesso programático` gera credenciais de segurança necessárias a usuários do AWS GameKit. A opção `Senha` permite a usuários acessar e usar a Console de Gerenciamento da AWS. Deixe marcada a opção `Senha gerada automaticamente` e desmarque a opção `O usuário deve criar uma nova senha no próximo login`.
+2. Em `Selecione o tipo de acesso à AWS`, marque ambos os tipos de credenciais. A opção `Chave de acesso - acesso programático` gera credenciais de segurança necessárias a usuários do AWS GameKit. A opção `Senha` permite a usuários acessar e usar a Console de Gerenciamento da AWS. Deixe marcada a opção `Senha gerada automaticamente` e desmarque a opção `O usuário deve criar uma nova senha no próximo login`. Clique no botão `Próximo: Permissões`.
 
 3. Na página de permissões, selecione a opção `Anexar políticas existentes de forma direta`. Localize a política `GameKitDeveloperPolicy` e selecione-a.
 
-Continue seguindo o passo a passo para criar o usuário. Finalizado o processo, a console do IAM mostrará as credenciais de segurança do uruário. Faça o download destes dados para um arquivo `.csv` local, uma vez que não há outra maneira de recuperar algumas destas informações a partir deste ponto. Se você perder estas credenciais, terá que gerar novas credenciais. Para o workshop isso não é um problema, podemos gerar novas credenciais e repetir alguns passos, mas em ambientes produtivos estas informações são extremamente sensíveis e por isso é necessário ter um cuidado extra no armazenamento e manuseio destas credenciais.
+Continue seguindo o passo a passo para criar o usuário. Finalizado o processo, a console do IAM mostrará as credenciais de segurança do usuário. Faça o download destes dados para um arquivo `.csv` local, uma vez que não há outra maneira de recuperar algumas destas informações a partir deste ponto. Se você perder estas credenciais, terá que gerar novas credenciais. Para o workshop isso não é um problema, podemos gerar novas credenciais e repetir alguns passos, mas em ambientes produtivos estas informações são extremamente sensíveis e por isso é necessário ter um cuidado extra no armazenamento e manuseio destas credenciais. Lembra-se do totem que cada personagem tem no filme Inception? Pois é, não compartilhe com ninguém. Se você não assistiu ao filme Inception, ou A Origem em português, aproveite para assistir mais tarde!
 
 #### O que foi feito até este ponto?
 
-Você criou uma política contendo as permissões necessárias para o funcionamento do AWS GameKit. Ela restringe o acesso de usuários a fazerem apenas o que é necessário ao funcionamento adequado do GameKit. Na sequência você criou um usuário que pode acessar os serviços da AWS de duas maneiras, pela console, como você está fazendo, ou programaticamente (via código), através das chaves geradas. Na criação, seu usuário não tinha qualquer permissão, mas ao anexar a política criada para o GameKit, você então estabeleceu que as permissões dele são governadas por aquela política.
+Você criou uma política contendo as permissões necessárias para o funcionamento do AWS GameKit. Ela restringe o acesso de usuários a fazerem apenas o que é necessário ao funcionamento adequado do GameKit. Na sequência você criou um usuário que pode acessar os serviços da AWS de duas maneiras, pela console, como você está fazendo, ou programaticamente (via código), através das chaves geradas. Na criação, seu usuário não tinha qualquer permissão, mas ao anexar a política criada para o AWS GameKit, você então estabeleceu que as permissões dele são governadas por aquela política.
 
 ## IV. Acessando a estação de trabalho na nuvem
 
@@ -476,7 +476,7 @@ Sua instância já deve estar pronta, agora vamos acessá-la e continuar o works
 
 5. Acesse sua instância utilizando o Remote Desktop. Caso seu computador seja Windows, basta procurar por `Remote Desktop` e entrar no aplicativo. Caso seu computador seja MacOS ou Linux, será preciso fazer download de um aplicativo similar.
 
-6. Através o aplicativo `Remote Desktop`, abra ou importe o arquivo `Unity Workstation.rdp` anteriormente gerado e acesse a instância. Quando for pedida a senha, utilize a senha anteriormente copiada. Qualquer problema, volte na console da AWS e copie novamente a senha descriptografada. O primeiro acesso pode levar alguns segundos.
+6. Através o aplicativo `Remote Desktop`, abra ou importe o arquivo `Unity Workstation.rdp` anteriormente gerado e acesse a instância. Quando for pedida a senha, utilize a senha anteriormente copiada. Qualquer problema, volte na console da AWS e copie novamente a senha descriptografada. O primeiro acesso pode levar alguns segundos. Se você estiver com dificuldades neste passo e não souber como usar o Remote Desktop, peça ajuda à equipe da Campus Play, não sofra sozinho ;)
 
 #### O que foi feito até este ponto?
 
@@ -484,7 +484,7 @@ Você utilizou a chave criptográfica criada anteriormente para descriptografar 
 
 ## V. Configurando o AWS GameKit para Unity
 
-1. Abra o Unity Hub a partir do link no Desktop. Caso ainda não tenha uma conta no Unity, clique em `Create account` e siga o processo. Depois disso, volte ao Unity Hub e faça o `Sign in`.
+1. Abra o Unity Hub a partir do link no Desktop. Caso ainda não tenha uma conta no Unity, clique em `Create account` e siga o processo. Depois disso, volte ao Unity Hub e faça o `Sign in`. Uma janela do browser deve ser aberta, entre com suas credencias, na janela de pop-up que aparecer, clique em `Open link` para voltar automaticamente ao Unity Hub.
 
 2. Algumas janelas aparecerão no Unity Hub, a primeira terá um botão `Got it`, basta clicar. A segunda perguntará sobre a instalação do Editor, clique em `Skip installation`, pois o download do editor já foi previamente feito e está na imagem utilizada no workshop. A terceira janela será sobre a licença de uso, basta clicar em `Agree and get personal edition license`, pois usaremos uma licença gratuita para o workshop. 
 
@@ -494,7 +494,7 @@ Você utilizou a chave criptográfica criada anteriormente para descriptografar 
 
 ![Unity Hub Projects](images/unity-hub-projects.png)
 
-5. Aguarde a finalização do carregamento do projeto, isso deve levar cerca de 4 minutos. Você deverá ver uma tela similar a esta:
+5. Aguarde a finalização do carregamento do projeto, isso deve levar cerca de 4 minutos. Após este tempo, você deverá ver uma janela similar a esta:
 
 ![Unity Hub Editor](images/unity-hub-editor.png)
 
@@ -504,11 +504,11 @@ Você utilizou a chave criptográfica criada anteriormente para descriptografar 
 
 8. Mantenha o `Environment` como `Development`, altere a `Region` para `us-east-2: US East (Ohio)`.
 
-9. A partir do arquivo `.csv` gerado no momento em que criou seu usuário para o AWs GameKit, preencha os campos `Access Key ID` e `Secret Access Key`. O seu número de conta de 9 dígitos deve ser automaticamente preenchido a seguir. Caso não tenha sido preenchido automaticamente, isso significa que pode ter havido algum erro nas etapas anteriores. Se estiver na Campus Play, é uma boa hora para pedir ajuda à equipe da AWS. Caso o número de 9 dígitos estja aparecendo, clique no botão `Submit`.
+9. A partir do arquivo `.csv` gerado no momento em que criou seu usuário para o AWs GameKit, preencha os campos `Access Key ID` e `Secret Access Key`. O seu número de conta de 9 dígitos deve ser automaticamente preenchido a seguir. Caso não tenha sido preenchido automaticamente, isso significa que pode ter havido algum erro nas etapas anteriores. Se estiver na Campus Play, é uma boa hora para pedir ajuda à equipe da AWS. Caso o número de 9 dígitos esteja aparecendo, clique no botão `Submit`.
 
 10. Vamos configurar o backend de 4 funcionalidades providas pelo AWS GameKit para o desenvolvimento dos seus jogos. No menu à esquerda, selecione `All Features` > `Identity & Authentication`, clique no botão `Create`. O AWS GameKit vai executar uma série de scripts para construção de um template do AWS CloudFormation, e a partir dele, vai configurar o backend na AWS para permitir ao seu jogo autenticar e identificar usuários. Os serviços utilizados para esta funcionalidade são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS IAM, AWS Key Management Service e AWS Lambda.
 
-11. Selecione `All Features` > `Game State Cloud Saving`, clique no botão `Create`. Similar à etapa anterior, o AWS GameKit iniciará a configuração do banckend na AWS para permitir ao seu jogo armazenar o estado de evolução do jogador na nuvem, como "saves" de jogos, sincronizando-as entre diferentes dispositivos. Os serviços utilizados para esta funcionalidade são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS Lambda e Amazon S3.
+11. Selecione `All Features` > `Game State Cloud Saving`, clique no botão `Create`. Similar à etapa anterior, o AWS GameKit iniciará a configuração do banckend na AWS para permitir ao seu jogo armazenar o estado de evolução do jogador na nuvem, como "saves" de jogos, sincronizando-o entre diferentes dispositivos. Os serviços utilizados para esta funcionalidade são: Amazon API Gateway, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS Lambda e Amazon S3.
 
 12. Selecione `All Features` > `Achievements`, clique no botão `Create`. Esta funcionalidade permite o gerenciamento de um sistema de conquistas do seu jogo. Os serviços utilizados são: Amazon API Gateway, Amazon CloudFront, Amazon CloudWatch, Amazon Cognito, Amazon DynamoDB, AWS Lambda, Amazon S3 e AWS Security Token Service.
 
@@ -517,3 +517,13 @@ Você utilizou a chave criptográfica criada anteriormente para descriptografar 
 14. Feche a janela do `AWS GameKit Settings`.
 
 15. No menu superior, clique em `File`, depois em `Build Settings`. Em `Scenes In Build` verifique se todas as opções esão selecionadas. Marque a plataforma `Windows, Mac, Linux` e clique no botão `Build And Run`. Selecione a pasta `Downloads` e clique em `Select Folder`. Aguarde a compilação e curta os 4 mini-jogos exemplificando cada uma das funcionalidades do AWS GameKit que você implementou!
+
+## VI. Finalizando o workshop
+
+Para concluir o workshop, volte ao Dashboard do evento neste [link](https://dashboard.eventengine.run/dashboard) e clique no botão `Survey`. Você verá uma tela similar a esta:
+
+![Survey](images/survey.png)
+
+É muito importante para a equipe receber seu feedback, é assim que aprimoramos o conteúdo do workshop. Se puder dedicar alguns minutos para preencher o Survey, ficaremos muito contentes! 
+
+Obrigado pelo tempo e interesse no workshop, esperamos que tenha sido uma experiência legal e que aproveite o restante da Campus Party Brasil 2022!
