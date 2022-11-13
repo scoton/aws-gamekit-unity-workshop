@@ -2,15 +2,15 @@
 
 Bem-vindo à Campus Party Brasil 2022!
 
-Ficamos felizes que você tenha dedicado parte do seu dia para exercitar alguns conceitos e experimentar, na prática, um pouco da experiência de um desenvolvedor de jogos eletrônicos.
+Ficamos felizes que você tenha dedicado parte do seu dia para exercitar alguns conceitos e experimentar na prática um pouco da experiência de um desenvolvedor de jogos eletrônicos.
 
-Neste workshop cada participante (com qualquer nível de conhecimento) terá a oportunidade de criar um mini-jogo. Os participantes conhecerão o AWS GameKit, solução que permite a desenvolvedores implantar e personalizar recursos de backend de jogos diretamente a partir dos engines Unity e Unreal, e experimentarão na prática com projetos-exemplo.
+Neste workshop, cada participante (com qualquer nível de conhecimento) terá a oportunidade de criar um mini-jogo. Os participantes conhecerão o AWS GameKit, solução que permite a desenvolvedores implantar e personalizar recursos de backend de jogos diretamente a partir dos engines Unity e Unreal, e experimentarão na prática com projetos-exemplo.
 
 Onde consigo materiais adicionais para me ajudar?
 
 Você pode encontrar o descritivo e a documentação do serviço AWS GameKit nestes dois links:
 
-[Descritivo do serviço](https://aws.amazon.com/pt/gamekit/)
+[Página do AWS GameKit](https://aws.amazon.com/pt/gamekit/)
 
 [Documentação do serviço](https://docs.aws.amazon.com/gamekit/index.html)
 
@@ -20,21 +20,28 @@ Além disso, recomendamos que siga este guia inicial em caso de dúvidas, pois p
 
 [Getting started - Unreal](https://docs.aws.amazon.com/gamekit/latest/UnrealDevGuide/getting-started.html)
 
-Este workshop foi construído para que você não precise da documentação extra, mas é sempre bom saber onde encontrar ajuda se quiser se aprofundar! Seguindo o passo a passo, você vai poder entender um pouco melhor qual o papel de um game engine, Unity no neste caso, navegar um pouco na console de serviços da AWS, e como o AWS GameKit automatiza tarefas de construção da infraestrutura de backend para suportar seu jogo online.
+O guia também contém detalhes de cada uma das funcionalidades implementadas, bem como pontos de atenção para quem desejar mover seu projeto para uma versão de produção.
+
+Este workshop foi construído para que você não precise da documentação extra, mas é sempre bom saber onde encontrar ajuda se quiser se aprofundar! Seguindo o passo a passo, você vai poder entender um pouco melhor qual o papel de um game engine, Unity neste caso, navegar um pouco na console de serviços da AWS, além de como o AWS GameKit automatiza tarefas de construção da infraestrutura de backend para suportar seu jogo online.
 
 ## Pré-requisitos
 
 ### Usuário e conta da AWS
 
-Para execução deste workshop você precisará de um usuário aa AWS com acesso aos serviços IAM, S3, DynamoDB, Lambda, API Gateway, Parameter Store, EC2, Cognito e CloudFormation. Se você estiver realizando este workshop dentro da sessão da Campus Play, a equipe vai fornecer uma conta e usuário temporários da AWS, mas se você não conseguiu participar e está tentando os passos em outro momento, sem problemas, basta acessar o site da AWS, criar sua conta, depois você pode voltar aqui e continuar a partir do passo de criação de um usuário ("III. Criando um usuário com acesso ao AWS GameKit").
+Para execução deste workshop você precisará de um usuário da AWS com acesso a diferentes serviços, entre eles AWS IAM, Amazon S3, Amazon DynamoDB, AWS Lambda, Amazon API Gateway, AWS Systems Manager Parameter Store, Amazon EC2, Amazon Cognito, Amazon CloudWatch e AWS CloudFormation. Muita coisa? Não se preocupe, você perceberá que muita está automatizado, mas é legal entender o que está por trás. 
+Se você estiver realizando este workshop dentro da sessão da Campus Play, a equipe vai fornecer uma conta e usuário temporários da AWS, mas se você não conseguiu participar e está tentando os passos em outro momento, sem problemas, basta acessar o site da AWS e criar sua conta. Não há custos para a criação de uma conta na AWS, você pagará apenas pelos recursos que utilizar e apenas pelo tempo em que estiverem ativos. Com exceção da estação de trabalho na nuvem, os demais serviços utilizados no workshop possuem um free tier, ou seja, um limite até o qual podem ser utilizados sem custo.
+
+### Usuário e conta no Unity
+
+No workshop, será utilizado o game engine Unity, portanto é preciso tê-lo instalado e configurado. Se estiver na Campus Play, vamos criar uma estação de trabalho na nuvem com o Unity pré-instalado, se estiver realizando o workshop em outro momento, então será necessário instalá-lo. Independente de como tenha sido a instalação, o Unity requer um usuário registrado, vamos detalhar mais adiante como criá-lo.
 
 ## I. Acessando a console da AWS pela primeira vez
 
-A equipe do workshop vai passar detalhes aos participantes.
+A equipe do workshop vai passar detalhes aos participantes da Campus Play. Se você não estiver na Campus Play e já possuir conta na AWS, pode avançar para a próxima seção.
 
 ## II. Criando uma estação de trabalho na nuvem
 
-Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e fazer todo o desenvolvimento lá. Esta é uma boa maneira de garantir que você sempre tenha acesso à sua máquina, não importa onde estiver. Caso esteja fazendo este workshop fora da Campus Play e queira reproduzir este trecho no seu próprio computador, sem a necessidade de criar a estação de trabalho na AWS, basta fazer o download do Unity e instalar, você pode encontrar os links mais importantes no final desta seção.
+Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e fazer todo o desenvolvimento lá. Esta é uma boa maneira de garantir que você sempre tenha acesso à sua máquina de desenvolvimento, não importa onde estiver. Caso esteja fazendo este workshop fora da Campus Play e queira reproduzir este trecho no seu próprio computador, sem a necessidade de criar a estação de trabalho na AWS, basta fazer o download e instalar o Unity, você pode encontrar os links mais importantes no final desta seção.
 
 ### Executando uma instância no Amazon EC2
 
