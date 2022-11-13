@@ -30,15 +30,15 @@ Este workshop foi construído para que você não precise da documentação extr
 
 Para execução deste workshop você precisará de um usuário da AWS com acesso a diferentes serviços, entre eles AWS IAM, Amazon S3, Amazon DynamoDB, AWS Lambda, Amazon API Gateway, AWS Systems Manager Parameter Store, Amazon EC2, Amazon Cognito, Amazon CloudWatch e AWS CloudFormation. Muita coisa? Não se preocupe, você perceberá que muito está automatizado, mas é legal entender o que está por trás. 
 
-Se você estiver realizando este workshop dentro da sessão da Campus Play, a equipe vai fornecer uma conta e usuário temporários da AWS, mas se você não conseguiu participar e está tentando os passos em outro momento, sem problemas, basta acessar o site da AWS e criar sua conta. Não há custos para a criação de uma conta na AWS, você pagará apenas pelos recursos que utilizar e apenas pelo tempo em que estiverem ativos. Com exceção da estação de trabalho na nuvem, os demais serviços utilizados no workshop possuem um free tier, ou seja, um limite até o qual podem ser utilizados sem custo.
+Se você estiver realizando este workshop dentro da sessão da Campus Party, a equipe vai fornecer uma conta e usuário temporários da AWS, mas se você não conseguiu participar e está tentando os passos em outro momento, sem problemas, basta acessar o site da AWS e criar sua conta. Não há custos para a criação de uma conta na AWS, você pagará apenas pelos recursos que utilizar e apenas pelo tempo em que estiverem ativos. Com exceção da estação de trabalho na nuvem, os demais serviços utilizados no workshop possuem um free tier, ou seja, um limite até o qual podem ser utilizados sem custo.
 
 ### Usuário e conta no Unity
 
-No workshop, será utilizado o game engine Unity, portanto é preciso tê-lo instalado e configurado. Se estiver na Campus Play, vamos criar uma estação de trabalho na nuvem com o Unity pré-instalado, se estiver realizando o workshop em outro momento, então será necessário instalá-lo. Independente de como tenha sido a instalação, o Unity requer um usuário registrado, vamos detalhar mais adiante como criá-lo.
+No workshop, será utilizado o game engine Unity, portanto é preciso tê-lo instalado e configurado. Se estiver na Campus Party, vamos criar uma estação de trabalho na nuvem com o Unity pré-instalado, se estiver realizando o workshop em outro momento, então será necessário instalá-lo. Independente de como tenha sido a instalação, o Unity requer um usuário registrado, vamos detalhar mais adiante como criá-lo.
 
 ## I. Acessando a console da AWS pela primeira vez
 
-Se você não estiver na Campus Play e já possuir conta na AWS, pode avançar para a próxima seção.
+Se você não estiver na Campus Party e já possuir conta na AWS, pode avançar para a próxima seção.
 
 Acesse o seguinte [link](https://dashboard.eventengine.run/login).
 
@@ -60,7 +60,7 @@ No Dashboard do evento, clique no botão `AWS Console` e depois em `Open Console
 
 ## II. Criando uma estação de trabalho na nuvem
 
-Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e fazer todo o desenvolvimento nela. Esta é uma boa maneira de garantir que você sempre tenha acesso à sua máquina de desenvolvimento, não importa onde estiver. Caso esteja fazendo este workshop fora da Campus Play e queira reproduzir este trecho no seu próprio computador, sem a necessidade de criar a estação de trabalho na AWS, basta fazer o download e instalar o Unity, você pode encontrar os links mais importantes no final desta seção.
+Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e fazer todo o desenvolvimento nela. Esta é uma boa maneira de garantir que você sempre tenha acesso à sua máquina de desenvolvimento, não importa onde estiver. Caso esteja fazendo este workshop fora da Campus Party e queira reproduzir este trecho no seu próprio computador, sem a necessidade de criar a estação de trabalho na AWS, basta fazer o download e instalar o Unity, você pode encontrar os links mais importantes no final desta seção.
 
 ### Executando uma instância no Amazon EC2
 
@@ -476,7 +476,7 @@ Sua instância já deve estar pronta, agora vamos acessá-la e continuar o works
 
 5. Acesse sua instância utilizando o Remote Desktop. Caso seu computador seja Windows, basta procurar por `Remote Desktop` e entrar no aplicativo. Caso seu computador seja MacOS ou Linux, será preciso fazer download de um aplicativo similar.
 
-6. Através o aplicativo `Remote Desktop`, abra ou importe o arquivo `Unity Workstation.rdp` anteriormente gerado e acesse a instância. Quando for pedida a senha, utilize a senha anteriormente copiada. Qualquer problema, volte na console da AWS e copie novamente a senha descriptografada. O primeiro acesso pode levar alguns segundos. Se você estiver com dificuldades neste passo e não souber como usar o Remote Desktop, peça ajuda à equipe da Campus Play, não sofra sozinho ;)
+6. Através o aplicativo `Remote Desktop`, abra ou importe o arquivo `Unity Workstation.rdp` anteriormente gerado e acesse a instância. Quando for pedida a senha, utilize a senha anteriormente copiada. Qualquer problema, volte na console da AWS e copie novamente a senha descriptografada. O primeiro acesso pode levar alguns segundos. Se você estiver com dificuldades neste passo e não souber como usar o Remote Desktop, peça ajuda à equipe da Campus Party, não sofra sozinho ;)
 
 #### O que foi feito até este ponto?
 
