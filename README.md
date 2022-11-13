@@ -1,4 +1,4 @@
-# Workshop - AWS GameKit
+# Workshop - AWS GameKit para Unity
 
 Bem-vindo à Campus Party Brasil 2022!
 
