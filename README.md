@@ -488,5 +488,3 @@ Você utilizou a chave criptográfica criada anteriormente para descriptografar 
 14. Feche a janela do `AWS GameKit Settings`.
 
 15. No menu superior, clique em `File`, depois em `Build Settings`. Em `Scenes In Build` verifique se todas as opções esão selecionadas. Marque a plataforma `Windows, Mac, Linux` e clique no botão `Build And Run`. Selecione a pasta `Downloads` e clique em `Select Folder`. Aguarde a compilação e curta os 4 mini-jogos exemplificando cada uma das funcionalidades do AWS GameKit que você implementou!
-
-## Parabéns por ter tentado, deixe seu comentários, críticas e sugestões para a equipe do evento, o objetivo é sempre aprimorarmos o conteúdo!
