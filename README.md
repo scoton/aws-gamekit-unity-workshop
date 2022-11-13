@@ -107,7 +107,7 @@ Você criou uma estação de trabalho Windows Server a partir de uma imagem prev
 3. Selecione a aba `JSON` para abrir o editor de JSON, depois substitua o conteúdo existente com a sintaxe de permissões para usuários do AWS GameKit. Para isso, use o exemplo a seguir, copie deste roteiro e cole na caixa correspondente dentro da console do IAM:
 
 ```JSON
-    {
+{
     "Version": "2012-10-17",
     "Statement": [
         {
