@@ -37,7 +37,17 @@ No workshop, será utilizado o game engine Unity, portanto é preciso tê-lo ins
 
 ## I. Acessando a console da AWS pela primeira vez
 
-A equipe do workshop vai passar detalhes aos participantes da Campus Play. Se você não estiver na Campus Play e já possuir conta na AWS, pode avançar para a próxima seção.
+Se você não estiver na Campus Play e já possuir conta na AWS, pode avançar para a próxima seção.
+
+Acesse o seguinte [link](https://dashboard.eventengine.run/login).
+
+Você deverá ver uma tela como a seguinte:
+
+![Event Engine](images/event-engine.png)
+
+Preencha o campo com o event hash fornecido pela equipe da AWS e clique no botão `Accept Terms & Login`.
+
+Selecione a opção `Email One-Time Password (OTP)`, preencha com seu email e clique em `Enviar código de acesso`.
 
 ## II. Criando uma estação de trabalho na nuvem
 
