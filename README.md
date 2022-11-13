@@ -441,7 +441,10 @@ Você criou uma estação de trabalho Windows Server a partir de uma imagem prev
 ```
 
 Personalize o conteúdo para sua conta, para isso, substitua as strings `<YOUR_ACCOUNT_ID>` pelo seu AWS account ID (número de conta de 9 dígitos). Para encontrar seu AWS account ID, clique no nome de usuário que aparece no topo ao lado direito, uma lista se expandirá contendo, entre outras informações, o número de 9 dígitos. Copie este número e substitua todas as ocorrências da string `<YOUR_ACCOUNT_ID>` por ele.
+
 Dica: há um pequeno ícone com dois pequenos quadrados ao lado direito do número de conta, clique nele para copiar o conteúdo. Em alguns momentos do workshop este ícone estará disponível e ajuda bastante a garantir que nenhum caractere se perca ;)
+
+Vale dedicar um tempo para revisar o conteúdo deste JSON. Mesmo que você não tenha conhecimentos de programação e desenvolvimento de software, pode ver que é possível entender mais ou menos do que se trata. Este tempo de revisão também serve para que tenha certeza de que substituiu todas as ocorrências de `<YOUR_ACCOUNT_ID>` pelo seu número de conta da AWS.
 
 4. Na console do IAM, após ter editado a sintaxe da política, vá clicando em `Próximo` até que a página de revisão da política apareça. Use o nome `GameKitDeveloperPolicy` para nomeá-la, e depois clique em `Criar política`.
 
