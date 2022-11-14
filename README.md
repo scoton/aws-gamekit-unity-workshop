@@ -76,7 +76,7 @@ Com o objetivo de ganhar tempo, vamos criar uma estação de trabalho na nuvem e
 
 6. Em `Tipo de instância`, selecione a opção `t2.xlarge`.
 
-7. Em `Par de chaves (login)`, clique no link `Criar novo par de chaves`, uma janela pop-up surgirá, dê o nome `unity-keys` ao par de chaves e selecione a opção `.pem`. Faça download do arquivo `unity-keys.cer`.
+7. Em `Par de chaves (login)`, clique no link `Criar novo par de chaves`, uma janela pop-up surgirá, dê o nome `unity-keys` ao par de chaves e selecione a opção `.pem`. Faça download do arquivo `unity-keys.pem`.
 
 8. Em `Configurações de rede`, mantenha selecionadas as opções `Criar grupo de segurança` e `Permitir tráfego RDP de`. Deve haver um quadro ao lado desta última opção, nele deveria estar escrito `Qualquer lugar 0.0.0.0/0`.
 
@@ -516,7 +516,9 @@ Você utilizou a chave criptográfica criada anteriormente para descriptografar 
 
 14. Feche a janela do `AWS GameKit Settings`.
 
-15. No menu superior, clique em `File`, depois em `Build Settings`. Em `Scenes In Build` verifique se todas as opções esão selecionadas. Marque a plataforma `Windows, Mac, Linux` e clique no botão `Build And Run`. Selecione a pasta `Downloads` e clique em `Select Folder`. Aguarde a compilação e curta os 4 mini-jogos exemplificando cada uma das funcionalidades do AWS GameKit que você implementou!
+15. No menu superior, clique em `File`, depois em `Build Settings`. Em `Scenes In Build` verifique se todas as opções esão selecionadas. Marque a plataforma `Windows, Mac, Linux` e clique no botão `Build And Run`. Selecione a pasta `Downloads` e clique em `Select Folder`. Aguarde a compilação e curta os 3 mini-jogos exemplificando cada uma das funcionalidades do AWS GameKit que você implementou!
+
+Ponto de atenção: O projeto compilado vai apresentar quatro opções, a primeira um exemplo de processo de autenticação e autorização, as demais consistem em 3 mini-jogos exemplificando as demais funcionalidades. Para que os mini-jogos funcionem é preciso criar um novo usuário e autenticá-lo. Durante a criação do usuário, no momento de definir a senha, é preciso utilizar uma senha forte, ou seja, contendo caracteres especiais, letras maiúsculas, minúsculas e números. Este usuário está sendo criado no Amazon Cognito e você pode conferir na Console de Gerenciamento da AWS. Para isso basta acessar a console, buscar pelo serviço Cognito e clicar em Usuários no menu à esquerda. Os mini-jogos exemplificam como dados e estatísticas de cada jogo podem ser enviados e armazenados na nuvem, portanto também é preciso segmentar os dados de cada usuário, e por isso o primeiro passo é a autenticação, ou criação caso nenhum usuário exista ainda.
 
 ## VI. Finalizando o workshop
 
